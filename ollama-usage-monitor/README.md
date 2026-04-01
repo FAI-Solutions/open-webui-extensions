@@ -4,8 +4,6 @@ Ollama Usage Monitor is an Open WebUI filter extension that shows Ollama Cloud u
 
 ![App demo](../assets/demo-ollama-usage-monitor.gif)
 
-[![Visualization of Ollama Usage Monitor](../assets/preview-ollama-usage-monitor.png)](../assets/demo-ollama-usage-monitor.gif)
-
 Back to [extensions overview](https://github.com/FAI-Solutions/open-webui-extensions) for Open WebUI by **FAI-Solutions**.
 
 ---
