@@ -9,14 +9,14 @@ I recently discovered Open WebUI. While it’s a great frontend tool, it still h
 ## Overview
 | Extension | Repository | Version | Uploaded | Downloads |
 | --- | --- | --- | --- | --- |
-| [Ollama Usage Monitor]() | [ollama-usage-monitor](/ollama-usage-monitor) | v0.5 | 2026-04-01 | ————— |
+| [Ollama Usage Monitor](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) | [ollama-usage-monitor](/ollama-usage-monitor) | v0.5 | 2026-04-01 | ————— |
 
 
 ## Details
 
 ### Ollama Usage Monitor
 
-[Ollama Usage Monitor]() is an Open WebUI filter extension that shows Ollama Cloud usage stats at the end of each LLM response. You can find the full documentation [here](/ollama-usage-monitor). The output looks like this:
+[Ollama Usage Monitor](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) is an Open WebUI filter extension that shows Ollama Cloud usage stats at the end of each LLM response. You can find the full documentation [here](/ollama-usage-monitor). The output looks like this:
 ```bash
 ------ ☁ Ollama Usage Monitor ------
 | MyAccount: Weekly 29.3% - Reset 1 day • run 2.4% - Reset 5 hours |
