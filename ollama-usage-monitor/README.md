@@ -1,6 +1,6 @@
 # Ollama Usage Monitor
 
-Ollama Usage Monitor is an Open WebUI filter extension that shows Ollama Cloud usage stats at the end of each LLM response.
+Ollama Usage Monitor is an Open WebUI filter extension that shows Ollama Cloud usage stats at the end of each LLM response. Click the demo GIF below to see the Add-On in action:
 
 ![App demo](../assets/demo-ollama-usage-monitor.gif)
 
@@ -74,7 +74,7 @@ the feature is active. If not, restart your Open WebUI server to ensure the filt
   }
 ]
 ```
-9. Replace the place holder `MyAccount_secure_session`, `MyAccount_aid` and `MyAccount_cf_clearance` with your copied values (if ``cf_clearance`` is not available, leave it as an empty string "").
+9. Replace the place holder `MyAccount_secure_session`, `MyAccount_aid` and `MyAccount_cf_clearance` with your copied values (if ``cf_clearance`` is not available, leave it as an empty string ""). Feel free to rename `MyAccount` to what ever you want.
 10. Then copy the JSON configuration and proceed to Step 2.4 of the Installation section.
 
 > **Hint**: If the machine is shared or accessed over a local network, you can include multiple accounts. The format is as follows:
@@ -101,7 +101,7 @@ the feature is active. If not, restart your Open WebUI server to ensure the filt
 1. Start a new chat with any model
 2. Enable **Ollama Usage Monitor** by clicking the `Integrations` icon next to the `+` symbol and toggling ``Ollama Usage Monitor`` on
 3. Send your message to the LLM
-4. After the response, you should see the usage statistics (see an example below):
+4. After the response, you should see the usage statistics (example below):
 ```
 ------ ☁ Ollama Usage Monitor ------
 | MyAccount: Weekly 29.3% - Reset 1 day • run 2.4% - Reset 5 hours |
@@ -133,22 +133,19 @@ the feature is active. If not, restart your Open WebUI server to ensure the filt
 
 ### Error: "Some Python Library not available"
 
-**Cause:** Open WebUI might remove a python package that is needed for this extension to work in a future update. Please inform me if that happens so that I can update the Install instructions.
+**Cause:** Open WebUI might remove a python package that is mandatory for the extension to work properly in a future update.
 
-**Solution:**
-```bash
-pip install package-name
-```
+**Solution:** Please inform me, I will push an update — to fix the issue.
 
 
 ### No output appears after messages
 
-**Cause:** The filter may be disabled or no accounts configured.
+**Cause:** The filter may be disabled, or no accounts are configured / values were pasted incorrectly
 
 **Solution:**
 1. Check that `enabled` is set to `true`
 2. Verify your `user_configs` contains valid JSON
-3. Check Open WebUI logs for errors
+3. Check Open WebUI logs for errors (debug mode)
 
 
 ### Cookie Expiration
