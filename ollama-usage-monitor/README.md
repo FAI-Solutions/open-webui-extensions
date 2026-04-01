@@ -12,7 +12,7 @@ Back to [extensions overview](https://github.com/FAI-Solutions/open-webui-extens
 
 ### Step 1: Download and install
 
-Download and Install from [openwebui-ollama-usage-monitor](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3).
+Download and Install from [openwebui-ollama-usage-monitor](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3). Press the `GET` button and select the installation option that suits you best.
 
 ### Step 2: Configuration
 
