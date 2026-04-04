@@ -10,7 +10,7 @@
 
 | Extension | Type | Version | Marketplace | Description |
 | --- | --- | --- | --- | --- |
-| [<img src="/assets/ollama.png" width="16" /> Ollama Usage Monitor](/ollama-usage-monitor) | Filter | v0.5 | [⬇️ Install](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) | Shows weekly Ollama Cloud usage stats |
+| [Ollama Usage Monitor](/ollama-usage-monitor) | Filter | v0.5 | [⬇️ Install](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) | Shows session and weekly Ollama Cloud usage stats |
 
 
 ## Why this hub exists
@@ -24,7 +24,7 @@ Open WebUI is a great chat interface, but it still has a few rough edges and min
 
 ## Extension Details
 
-### Ollama Usage Monitor
+### <img src="/assets/ollama.png" width="16" /> Ollama Usage Monitor
 
 [Ollama Usage Monitor](/ollama-usage-monitor) is an Open WebUI filter extension that shows session & weekly Ollama Cloud usage stats at the end of each LLM response, including the time remaining until reset.
 
