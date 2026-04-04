@@ -10,7 +10,7 @@
 
 | Extension | Type | Version | Marketplace | Description |
 | --- | --- | --- | --- | --- |
-| [Ollama Usage Monitor](/ollama-usage-monitor) | Filter | v0.5 | [⬇️ Install](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) | Shows session and weekly Ollama Cloud usage stats |
+| [Ollama Usage Monitor](/ollama-usage-monitor) | Filter | v0.5 | [⬇️ Install](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) | Shows weekly Ollama Cloud usage stats |
 
 
 ## Why this hub exists
