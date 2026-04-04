@@ -41,7 +41,7 @@ Open WebUI is a great chat interface, but it still has a few rough edges and min
 ## 🤝 Contributing
 
 Want to request an extension or add your own one?  
-- Open an issue with your idea / email
+- Open an issue with your idea (or just email)
 - Or submit a PR with a new folder following the same structure as `ollama-usage-monitor`
 
 
