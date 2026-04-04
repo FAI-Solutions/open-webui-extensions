@@ -1,10 +1,10 @@
-# Ollama Usage Monitor
+# <img src="../assets/ollama.png" width="24" />&thinsp;&thinsp;Ollama Usage Monitor
 
-Ollama Usage Monitor is an Open WebUI filter extension that shows Ollama Cloud usage stats at the end of each LLM response. Click the demo GIF below to see the Add-On in action:
+**Part of the [FAI-Solutions Open WebUI Extensions hub](https://github.com/FAI-Solutions/open-webui-extensions)**
+
+Ollama Usage Monitor is an Open WebUI filter extension that shows session and weekly Ollama Cloud usage stats at the end of each LLM response. Click the demo GIF below to see the Add-On in action:
 
 ![App demo](../assets/demo-ollama-usage-monitor.gif)
-
-Back to [extensions overview](https://github.com/FAI-Solutions/open-webui-extensions) for Open WebUI by **FAI-Solutions**.
 
 ---
 
@@ -12,7 +12,7 @@ Back to [extensions overview](https://github.com/FAI-Solutions/open-webui-extens
 
 ### Step 1: Download and install
 
-Download and Install from [openwebui-ollama-usage-monitor](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3). Press the `GET` button and select the installation option that suits you best.
+Download and Install from Open WebUI [Marketplace](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3). Press the `GET` button and select the installation option that suits you best.
 
 ### Step 2: Configuration
 
@@ -156,11 +156,11 @@ the feature is active. If not, restart your Open WebUI server to ensure the filt
 
 ---
 
-## License
-
-[MIT](../LICENSE)
-
-
 ## Contact
 
 - **Developer**: Johannes Faber — [fais.udder466@passinbox.com](mailto:fais.udder466@passinbox.com)
+
+
+## License
+
+[MIT](../LICENSE)
