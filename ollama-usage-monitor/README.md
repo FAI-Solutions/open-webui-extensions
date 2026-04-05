@@ -1,4 +1,4 @@
-# <img src="../assets/ollama.png" width="24" />&thinsp;&thinsp;Ollama Usage Monitor
+# <picture><source media="(prefers-color-scheme: dark)" srcset="../assets/ollama-dark.svg"><source media="(prefers-color-scheme: light)" srcset="../assets/ollama-light.svg"><img src="../assets/ollama-light.svg" width="24" alt="Ollama icon"></picture>&thinsp;&thinsp;Ollama Usage Monitor
 
 **Part of the [FAI-Solutions Open WebUI Extensions hub](https://github.com/FAI-Solutions/open-webui-extensions)**
 
