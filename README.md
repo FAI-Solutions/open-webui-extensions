@@ -24,7 +24,7 @@ Open WebUI is a great chat interface, but it still has a few rough edges and min
 
 ## Extension Details
 
-### <img src="/assets/ollama.png" width="16" /> Ollama Usage Monitor
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/ollama-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/ollama-light.svg"><img src="assets/ollama-light.svg" width="16" alt="Ollama icon"></picture> Ollama Usage Monitor
 
 [Ollama Usage Monitor](/ollama-usage-monitor) is an Open WebUI filter extension that shows session & weekly Ollama Cloud usage stats at the end of each LLM response, including the time remaining until reset.
 
