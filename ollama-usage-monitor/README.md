@@ -12,7 +12,10 @@ Ollama Usage Monitor is an Open WebUI filter extension that shows session and we
 
 ### Step 1: Download and install
 
-Download and Install from Open WebUI [Marketplace](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3). Press the `GET` button and select the installation option that suits you best.
+- Download and Install from Open WebUI [Marketplace](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) (requires an account on Open WebUI). Open the URL and press the `GET` button and select the installation option that suits you best.
+- Or download and Install from [Github](ollama_usage_monitor.json). Open the URL and press the download icon ![download](https://raw.githubusercontent.com/primer/octicons/main/icons/download-16.svg) in the top toolbar on the right side.
+- In Open WebUI click your **Profile** → **Admin Panel** → **Functions** → click **Import** → select the file
+
 
 ### Step 2: Configuration
 
