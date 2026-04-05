@@ -28,7 +28,7 @@ Open WebUI is a great chat interface, but it still has a few rough edges and min
 
 [Ollama Usage Monitor](/ollama-usage-monitor) is an Open WebUI filter extension that shows session & weekly Ollama Cloud usage stats at the end of each LLM response, including the time remaining until reset.
 
-- Install directly from Open WebUI's [⬇️ Marketplace](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3)
+- Install directly from Open WebUI's [⬇️ Marketplace](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) or from [⬇️ Github](/ollama-usage-monitor/ollama_usage_monitor.json)
 - Full setup guide → [Ollama Usage Monitor README](/ollama-usage-monitor)
 
 **Example output:**
