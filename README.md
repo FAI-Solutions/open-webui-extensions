@@ -2,7 +2,7 @@
 
 **Practical filter, function, pipeline, and tool extensions for Open WebUI** — solving everyday usability and functionality gaps in local and cloud LLM workflows.
 
-⚠ **Early stage** — currently featuring one extension, with additional releases planned as interest grows.
+⚠ **Early stage** — currently featuring two extension, with additional releases planned as interest grows.
 
 ---
 
@@ -10,19 +10,33 @@
 
 | Extension | Type | Version | Marketplace | Description |
 | --- | --- | --- | --- | --- |
-| [Ollama Usage Monitor](/ollama-usage-monitor) | Filter | v0.5 | [⬇️ Install](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) | Shows weekly Ollama Cloud usage stats |
+| [LLMTrace](/llmtrace) | Filter | v1.0 | [⬇️ Install](https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe) | Visualizes the LLM workflow step-by-step |
+| [Ollama Usage Monitor](/ollama-usage-monitor) | Filter | v0.6 | [⬇️ Install](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) | Shows weekly Ollama Cloud usage stats |
 
+
+<br>
 
 ## Why this hub exists
 
 Open WebUI is a great chat interface, but it still has a few rough edges and minor annoyances. This repository collects **small, focused, high-quality extensions** designed to improve everyday usability.
 
 **Planned extensions** (suggestions welcome!):
-- [ ] Proper Debugger
+- [ ] Proper Debugger (*on hold*)
 - [ ] ...
 
+<br>
 
 ## Extension Details
+
+### <img src="assets/llmtrace.svg" width="20" alt="LLMTrace icon"> LLMTrace
+
+[LLMTrace](/llmtrace) is an Open WebUI filter extension that gives insights into the LLMs workflow. It show each step that happens after the LLM receives Users query.
+
+- Install directly from Open WebUI's [⬇️ Marketplace](https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe) or from [⬇️ Github](/llmtrace/llmtrace.json)
+- Full setup guide → [LLMTrace README](/llmtrace)
+
+There are multiple output formats: a dropdown panel attached to the end of the LLM message; a small timeline embedded at the top of the LLM message; a full dashboard in a web-browser-tab.
+
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/ollama-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/ollama-light.svg"><img src="assets/ollama-light.svg" width="16" alt="Ollama icon"></picture> Ollama Usage Monitor
 
@@ -43,7 +57,7 @@ Open WebUI is a great chat interface, but it still has a few rough edges and min
 
 Want to request an extension or add your own?  
 - Open an issue with your idea (or just email me)
-- Or submit a PR with a new folder following the same structure as `ollama-usage-monitor`
+- Or submit a PR with a new folder following the same structure as the already existing extensions
 
 
 ## Contact
