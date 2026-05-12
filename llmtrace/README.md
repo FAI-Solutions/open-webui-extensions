@@ -1,4 +1,4 @@
-# <picture><img src="assets/llmtrace.svg" width="30" alt="LLMTrace icon"></picture> LLMTrace
+# <picture><img src="../assets/llmtrace.svg" width="30" alt="LLMTrace icon"></picture> LLMTrace
 
 **Part of the [FAI-Solutions Open WebUI Extensions hub](https://github.com/FAI-Solutions/open-webui-extensions)**
 
