@@ -28,7 +28,7 @@ Open WebUI is a great chat interface, but it still has a few rough edges and min
 
 ## Extension Details
 
-### <img src="assets/llmtrace.svg" width="20" alt="LLMTrace icon"> LLMTrace
+### <picture><img src="assets/llmtrace.svg" width="20" alt="LLMTrace icon"></picture> LLMTrace
 
 [LLMTrace](/llmtrace) is an Open WebUI filter extension that gives insights into the LLMs workflow. It show each step that happens after the LLM receives Users query.
 
