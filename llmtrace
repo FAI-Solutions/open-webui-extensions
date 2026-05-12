@@ -1,0 +1,100 @@
+# LLMTrace
+
+**Part of the [FAI-Solutions Open WebUI Extensions hub](https://github.com/FAI-Solutions/open-webui-extensions)**
+
+LLMTrace is an Open WebUI filter extension that traces and displays everything that happens between your message and the LLM's response — model selection, parameters, tool calls, reasoning blocks, streaming stats, and timing.
+
+![Preview of the embedded Timeline](../assets/preview-llmtrace.png)
+
+---
+
+## Output Modes
+
+| Mode | What you get |
+|---|---|
+| `panel` | Collapsible diagnostic panel appended to every LLM message |
+| `panel+embed` | Panel + inline visual timeline (expandable, rendered as iframe) attached at the top of LLMs message |
+| `panel+tab` | Panel + full dashboard auto-opens in new browser tab with detailed information |
+| `all` | Panel + embed + new tab |
+
+<br>
+
+### What It Shows
+
+- **Request**: model ID, base model, function calling mode, vision capability, feature flags, parameters
+- **System prompt**: detected length and preview
+- **Conversation**: message depth and role breakdown
+- **Attachments**: files and images in context
+- **Tool calls**: name, category (builtin/custom/terminal), round-trip count
+- **Reasoning**: tag-based or delta-based detection, block count, duration, character count
+- **Streaming**: chunk count (content vs empty), finish reason, round tracking
+- **Response quality**: characters, words, paragraphs, code blocks (with languages), headers, list items, tables, citations, math detection
+- **Timing**: TTFT (time to first token), TTFC (time to first content), stream duration, total duration
+- **RAG**: source detection and count
+
+<br>
+
+## Installation
+
+### Step 0: Requirements
+
+- Open WebUI 0.9.0 or newer
+
+### Step 1: Download
+
+- Download and Install from Open WebUI [Marketplace](https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe) (requires an account on Open WebUI). Open the URL and press the `GET` button and select the installation option that suits you best.
+
+- Or download and Install from [Github](llmtrace.json). Open the URL and press the download icon ![download](https://raw.githubusercontent.com/primer/octicons/main/icons/download-16.svg) in the top toolbar on the right side.
+
+
+### Step 2: Install
+
+1. Open WebUI Admin Panel → Functions → Import
+2. select the downloaded json file
+3. Enable the function (green toggle)
+4. Set as Global (let you activate it with every model from the chat) 
+5. Or add to Default Filters in model settings so it's on only for a particular model
+
+### Step 3: Usage
+
+- Select the function in the chat and send your query to the LLM
+
+- Explore settings
+
+<br>
+
+## Settings Reference
+
+**Admin Valves** (Admin Panel → Functions → LLMTrace → ⚙ gear icon):
+
+| Valve | Default | Description |
+|---|---|---|
+| `priority` | `100` | Execution order (higher = later) |
+| `enabled` | `true` | Master on/off |
+| `show_for_api` | `false` | Show panel for direct API requests |
+| `emit_status` | `true` | Real-time status updates during streaming |
+| `verbose_default` | `false` | Panel starts expanded |
+| `sys_preview_len` | `80` | System prompt preview character limit |
+| `dashboard_mode` | `panel + embed` | Output mode (see table above) |
+| `panel_timeline_limit` | `20` | Max timeline events in panel |
+| `embed_initial_rows` | `12` | Visible rows in embed before expansion |
+| `embed_expand_step` | `12` | Rows added per "Show more" click |
+
+**User Valves** (accessible in the chat):
+
+| Valve | Default | Description |
+|---|---|---|
+| `verbose` | `None` | Override verbose mode |
+| `show_json` | `true` | Include JSON export in panel |
+| `dashboard_mode` | `None` | Override output mode |
+
+---
+
+## Contact
+
+- **Developer**: Johannes Faber — [fais.udder466@passinbox.com](mailto:fais.udder466@passinbox.com)
+
+
+## License
+
+[MIT](../LICENSE)
