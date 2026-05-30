@@ -12,8 +12,8 @@ Ollama Usage Monitor is an Open WebUI filter extension that shows session and we
 
 ### Step 1: Download and install
 
-- Download and Install from Open WebUI [Marketplace](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) (requires an account on Open WebUI). Open the URL and press the `GET` button and select the installation option that suits you best.
-- Or download and Install from [Github](ollama_usage_monitor.json). Open the URL and press the download icon ![download](https://raw.githubusercontent.com/primer/octicons/main/icons/download-16.svg) in the top toolbar on the right side.
+- Download and Install from Open WebUI <a href="https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3" rel="me noopener">Marketplace</a> (requires an account on Open WebUI). Open the URL and press the `GET` button and select the installation option that suits you best.
+- Or download and Install from [Github](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor/ollama_usage_monitor.json). Open the URL and press the download icon ![download](https://raw.githubusercontent.com/primer/octicons/main/icons/download-16.svg) in the top toolbar on the right side.
 - In Open WebUI click your **Profile** → **Admin Panel** → **Functions** → click **Import** → select the file
 
 
@@ -162,6 +162,7 @@ the feature is active. If not, restart your Open WebUI server to ensure the filt
 ## Contact
 
 - **Developer**: Johannes Faber — [fais.udder466@passinbox.com](mailto:fais.udder466@passinbox.com)
+- **Hub-Website**: <a href="https://fai-solutions.github.io/" rel="me noopener">https://fai-solutions.github.io/</a>
 
 
 ## License
