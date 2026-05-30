@@ -42,9 +42,9 @@ LLMTrace is an Open WebUI filter extension that traces and displays everything t
 
 ### Step 1: Download
 
-- Download and Install from Open WebUI [Marketplace](https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe) (requires an account on Open WebUI). Open the URL and press the `GET` button and select the installation option that suits you best.
+- Download and Install from Open WebUI <a href="https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe" rel="me noopener">Marketplace</a> (requires an account on Open WebUI). Open the URL and press the `GET` button and select the installation option that suits you best.
 
-- Or download and Install from [Github](llmtrace.json). Open the URL and press the download icon ![download](https://raw.githubusercontent.com/primer/octicons/main/icons/download-16.svg) in the top toolbar on the right side.
+- Or download and Install from [Github](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace/llmtrace.json). Open the URL and press the download icon ![download](https://raw.githubusercontent.com/primer/octicons/main/icons/download-16.svg) in the top toolbar on the right side.
 
 
 ### Step 2: Install
@@ -93,6 +93,7 @@ LLMTrace is an Open WebUI filter extension that traces and displays everything t
 ## Contact
 
 - **Developer**: Johannes Faber — [fais.udder466@passinbox.com](mailto:fais.udder466@passinbox.com)
+- **Hub-Website**: <a href="https://fai-solutions.github.io/" rel="me noopener">https://fai-solutions.github.io/</a>
 
 
 ## License
