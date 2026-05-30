@@ -10,8 +10,8 @@
 
 | Extension | Type | Version | Marketplace | Description |
 | --- | --- | --- | --- | --- |
-| [LLMTrace](/llmtrace) | Filter | v1.0 | [⬇️ Install](https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe) | Visualizes the LLM workflow step-by-step |
-| [Ollama Usage Monitor](/ollama-usage-monitor) | Filter | v0.6 | [⬇️ Install](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) | Shows weekly Ollama Cloud usage stats |
+| [LLMTrace](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace) | Filter | v1.0 | <a href="https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe" rel="me noopener">⬇️ Install</a> | Visualizes the LLM workflow step-by-step |
+| [Ollama Usage Monitor](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor) | Filter | v0.6 | <a href="https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3" rel="me noopener">⬇️ Install</a> | Shows weekly Ollama Cloud usage stats |
 
 
 <br>
@@ -30,20 +30,20 @@ Open WebUI is a great chat interface, but it still has a few rough edges and min
 
 ### <picture><img src="assets/llmtrace.svg" width="20" alt="LLMTrace icon"></picture> LLMTrace
 
-[LLMTrace](/llmtrace) is an Open WebUI filter extension that gives insights into the LLMs workflow. It show each step that happens after the LLM receives Users query.
+[LLMTrace](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace) is an Open WebUI filter extension that gives insights into the LLMs workflow. It show each step that happens after the LLM receives Users query.
 
-- Install directly from Open WebUI's [⬇️ Marketplace](https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe) or from [⬇️ Github](/llmtrace/llmtrace.json)
-- Full setup guide → [LLMTrace README](/llmtrace)
+- Install directly from Open WebUI's <a href="https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe" rel="me noopener">⬇️ Marketplace</a> or from [⬇️ Github](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace/llmtrace.json)
+- Full setup guide → [LLMTrace README](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace)
 
 There are multiple output formats: a dropdown panel attached to the end of the LLM message; a small timeline embedded at the top of the LLM message; a full dashboard in a web-browser-tab.
 
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/ollama-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/ollama-light.svg"><img src="assets/ollama-light.svg" width="16" alt="Ollama icon"></picture> Ollama Usage Monitor
 
-[Ollama Usage Monitor](/ollama-usage-monitor) is an Open WebUI filter extension that shows session & weekly Ollama Cloud usage stats at the end of each LLM response, including the time remaining until reset.
+[Ollama Usage Monitor](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor) is an Open WebUI filter extension that shows session & weekly Ollama Cloud usage stats at the end of each LLM response, including the time remaining until reset.
 
-- Install directly from Open WebUI's [⬇️ Marketplace](https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3) or from [⬇️ Github](/ollama-usage-monitor/ollama_usage_monitor.json)
-- Full setup guide → [Ollama Usage Monitor README](/ollama-usage-monitor)
+- Install directly from Open WebUI's <a href="https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3" rel="me noopener">⬇️ Marketplace</a> or from [⬇️ Github](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor/ollama_usage_monitor.json)
+- Full setup guide → [Ollama Usage Monitor README](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor)
 
 **Example output:**
 ```bash
@@ -63,7 +63,7 @@ Want to request an extension or add your own?
 ## Contact
 
 - **Developer**: Johannes Faber — [fais.udder466@passinbox.com](mailto:fais.udder466@passinbox.com)
-
+- **Hub-Website**: <a href="https://fai-solutions.github.io/" rel="me noopener">https://fai-solutions.github.io/</a>
 
 ## License
 
