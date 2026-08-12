@@ -4,6 +4,8 @@
 
 ⚠ **Early stage** — currently featuring two extension, with additional releases planned as interest grows.
 
+❗ Working on a patch for the new open webui v0.11.0
+
 ---
 
 ## 📦  Available Extensions
