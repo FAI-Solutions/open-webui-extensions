@@ -2,7 +2,7 @@
 
 **Part of the [FAI-Solutions Open WebUI Extensions hub](https://github.com/FAI-Solutions/open-webui-extensions)**
 
-Ollama Usage Monitor is an Open WebUI filter extension that shows session and weekly Ollama Cloud usage stats at the end of each LLM response. Click the demo GIF below to see the Add-On in action:
+Ollama Usage Monitor is an Open WebUI filter extension that shows session and weekly Ollama Cloud usage stats as a status line on each LLM response. Click the demo GIF below to see the Add-On in action:
 
 ![App demo](../assets/demo-ollama-usage-monitor.gif)
 
@@ -106,8 +106,7 @@ the feature is active. If not, restart your Open WebUI server to ensure the filt
 3. Send your message to the LLM
 4. After the response, you should see the usage statistics (example below):
 ```
------- ☁ Ollama Usage Monitor ------
-| MyAccount: Weekly 29.3% - Reset 1 day • run 2.4% - Reset 5 hours |
+☁ MyAccount: Weekly 0% → Reset 3 days. • Session 0% → Reset 5 hours.
 ```
 
 
@@ -121,6 +120,23 @@ the feature is active. If not, restart your Open WebUI server to ensure the filt
 | `debug_mode` | `false` | Enable debug logging to console |
 
 
+## Version compatibility
+
+| Open WebUI version | Ollama Usage Monitor version |
+|--------------------|------------------------------|
+| **v0.11 or newer** | [v0.7](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor/ollama_usage_monitor.json) |
+| v0.10 or older | [v0.6](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor/ollama_usage_monitor-v0.6.json) |
+
+Open WebUI v0.11.0 changed how filter-appended text is handled: content written into a message by a filter is now **persisted and sent back to the LLM** on subsequent turns. v0.7+ was rebuilt to deliver the stats as a **status line** instead of appended text, so the usage info is never visible to the LLM and leaves no residue in the chat when the filter is toggled off. v0.6 used the old append method, which only behaves correctly on pre-v0.11 Open WebUI.
+
+### Detailed changes in v0.7
+
+- **Stats now appear as a status line** above the response, not as appended text. With multiple accounts configured, a collapsed row `☁ Ollama Usage Monitor` expands to one row per account. With a single account, the stat line is shown directly.
+- **Invisible to the LLM.** The stats live in the message's status history, never in its content, so they are not sent back to the model on later turns.
+- **No residue when toggled.** Turning the filter off mid-chat stops new lines from appearing; nothing was ever written into the message text, so there is nothing left behind.
+- **Improved debug mode** (`debug_mode` valve)
+
+
 ## Troubleshooting
 
 ### Error: "Cloudflare challenge still active"
@@ -132,6 +148,7 @@ the feature is active. If not, restart your Open WebUI server to ensure the filt
 2. Complete any Cloudflare challenges if prompted
 3. Extract the new `cf_clearance` cookie
 4. Update your configuration with the new value
+5. Update cloudscraper in the python venv / docker
 
 
 ### Error: "Some Python Library not available"
