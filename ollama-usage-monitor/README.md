@@ -32,11 +32,7 @@ Activate the filter — **Ollama Usage Monitor**
 
 ### Step 3: Restart Open WebUI
 
-Open a new chat window, click the ``Integrations`` icon next to the ``+``, and enable Ollama Usage Monitor. Send a simple message such as “Hi”. If the LLM response ends with:
-```bash
------- ☁ Ollama Usage Monitor ------
-```
-the feature is active. If not, restart your Open WebUI server to ensure the filter is loaded (a restart was required in most of my tests).
+Open a new chat window, click the ``Integrations`` icon next to the ``+``, and enable Ollama Usage Monitor. Send a simple message such as “Hi”. If the status line at the top of the LLM response is not shown restart Open WebUI server and try again.
 
 
 ## One time setup
@@ -104,10 +100,17 @@ the feature is active. If not, restart your Open WebUI server to ensure the filt
 1. Start a new chat with any model
 2. Enable **Ollama Usage Monitor** by clicking the `Integrations` icon next to the `+` symbol and toggling ``Ollama Usage Monitor`` on
 3. Send your message to the LLM
-4. After the response, you should see the usage statistics (example below):
-```
-☁ MyAccount: Weekly 0% → Reset 3 days. • Session 0% → Reset 5 hours.
-```
+4. After the response, the usage stats appear as a status line. Example with multiple accounts — click the collapsed row to expand:
+
+   `☁ Ollama Usage Monitor`  →  expands to:
+   ```
+   ☁ MyAccount: Weekly 0% → Reset 4 days. • Session 0% → Reset 3 hours.
+   ☁ WifesAccount: Weekly 0.4% → Reset 4 days. • Session 0% → Reset 3 hours.
+   ```
+   With a single account configured, the line is shown directly (no expansion):
+   ```
+   ☁ MyAccount: Weekly 29.3% → Reset 1 day • Session 2.4% → Reset 5 hours
+   ```
 
 
 ## Settings Reference
