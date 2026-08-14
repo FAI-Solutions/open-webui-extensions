@@ -109,7 +109,7 @@ Open a new chat window, click the ``Integrations`` icon next to the ``+``, and e
    ```
    With a single account configured, the line is shown directly (no expansion):
    ```
-   ☁ MyAccount: Weekly 29.3% → Reset 1 day • Session 2.4% → Reset 5 hours
+   ☁ MyAccount: Weekly 29.3% → Reset 1 day. • Session 2.4% → Reset 5 hours.
    ```
 
 
