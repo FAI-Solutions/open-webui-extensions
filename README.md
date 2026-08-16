@@ -10,7 +10,7 @@
 
 | Extension | Type | Version | Marketplace | Description |
 | --- | --- | --- | --- | --- |
-| [LLMTrace](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace) | Filter | v1.0 | <a href="https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe" rel="me noopener">⬇️ Install</a> | Visualizes the LLM workflow step-by-step |
+| [LLMTrace](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace) | Filter | v1.2 | <a href="https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe" rel="me noopener">⬇️ Install</a> | Visualizes the LLM workflow step-by-step |
 | [Ollama Usage Monitor](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor) | Filter | v0.7 | <a href="https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3" rel="me noopener">⬇️ Install</a> | Shows weekly Ollama Cloud usage stats |
 
 
@@ -21,7 +21,8 @@
 Open WebUI is a great chat interface, but it still has a few rough edges and minor annoyances. This repository collects **small, focused, high-quality extensions** designed to improve everyday usability.
 
 **Planned extensions** (suggestions welcome!):
-- [ ] Updating the current extensions to be compatible with Open WebUI v0.11
+- [ ] LLMTrace v1.3 (ability to trace all new features added in open webui v0.11)
+- [ ] Ollama Usage Monitor v1.0 (rebuilding the entire output)
 - [ ] ...
 
 <br>
@@ -35,7 +36,7 @@ Open WebUI is a great chat interface, but it still has a few rough edges and min
 - Install directly from Open WebUI's <a href="https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe" rel="me noopener">⬇️ Marketplace</a> or from [⬇️ Github](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace/llmtrace.json)
 - Full setup guide → [LLMTrace README](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace)
 
-There are multiple output formats: a dropdown panel attached to the end of the LLM message; a small timeline embedded at the top of the LLM message; a full dashboard in a web-browser-tab.
+Two different outputs are available (a compact timeline and a detailed dashboard).
 
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/ollama-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/ollama-light.svg"><img src="assets/ollama-light.svg" width="16" alt="Ollama icon"></picture> Ollama Usage Monitor
