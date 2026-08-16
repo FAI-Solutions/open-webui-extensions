@@ -2,7 +2,7 @@
 
 **Part of the [FAI-Solutions Open WebUI Extensions hub](https://github.com/FAI-Solutions/open-webui-extensions)**
 
-LLMTrace is an Open WebUI filter extension that traces and displays everything that happens between your message and the LLM's response — model selection, parameters, tool calls, reasoning blocks, streaming stats, and timing.
+LLMTrace is an Open WebUI filter extension that traces and displays everything that happens between your message and the LLM's response (model selection, parameters, tool calls, reasoning blocks, streaming stats, and timing).
 
 ![Preview of the embedded Timeline](../assets/preview-llmtrace.png)
 
@@ -10,12 +10,13 @@ LLMTrace is an Open WebUI filter extension that traces and displays everything t
 
 ## Output Modes
 
+The output is rendered as in-chat embeds **above** the LLM message and is not wrotten into the message text (basically the trace is invisible to the LLM).
+
 | Mode | What you get |
 |---|---|
-| `panel` | Collapsible diagnostic panel appended to every LLM message |
-| `panel+embed` | Panel + inline visual timeline (expandable, rendered as iframe) attached at the top of LLMs message |
-| `panel+tab` | Panel + full dashboard auto-opens in new browser tab with detailed information |
-| `all` | Panel + embed + new tab |
+| `timeline` | Compact timeline, rendered as an inline embed at the top of LLM message (default) |
+| `dashboard` | Full Detailed Dashboard embed: timeline and cards with extra details |
+| `both` | Timeline + Detailed Dashboard as two separate embeds |
 
 <br>
 
@@ -38,7 +39,7 @@ LLMTrace is an Open WebUI filter extension that traces and displays everything t
 
 ### Step 0: Requirements
 
-- Open WebUI 0.9.0 or newer
+- Open WebUI 0.11.0 or newer
 
 ### Step 1: Download
 
@@ -49,17 +50,15 @@ LLMTrace is an Open WebUI filter extension that traces and displays everything t
 
 ### Step 2: Install
 
-1. Open WebUI Admin Panel → Functions → Import
-2. select the downloaded json file
-3. Enable the function (green toggle)
-4. Set as Global (let you activate it with every model from the chat) 
-5. Or add to Default Filters in model settings so it's on only for a particular model
+1. Open WebUI Admin Panel → Functions → Create ▾  (press the dropdown arrow)
+2. Pick Import JSON and select the downloaded json file
+3. Enable the function
+4. Click ⋯ and toggle Global on (lets you activate the filter with every model from the chat)
+
 
 ### Step 3: Usage
 
 - Select the function in the chat and send your query to the LLM
-
-- Explore settings
 
 <br>
 
@@ -71,22 +70,17 @@ LLMTrace is an Open WebUI filter extension that traces and displays everything t
 |---|---|---|
 | `priority` | `100` | Execution order (higher = later) |
 | `enabled` | `true` | Master on/off |
-| `show_for_api` | `false` | Show panel for direct API requests |
 | `emit_status` | `true` | Real-time status updates during streaming |
-| `verbose_default` | `false` | Panel starts expanded |
-| `sys_preview_len` | `80` | System prompt preview character limit |
-| `dashboard_mode` | `panel + embed` | Output mode (see table above) |
-| `panel_timeline_limit` | `20` | Max timeline events in panel |
-| `embed_initial_rows` | `12` | Visible rows in embed before expansion |
+| `dashboard_mode` | `timeline` | Output mode (see table above) |
+| `embed_initial_rows` | `12` | Timeline rows visible before "Show more" |
 | `embed_expand_step` | `12` | Rows added per "Show more" click |
+| `dash_timeline_rows` | `20` | Timeline rows shown in the Detailed Dashboard |
 
 **User Valves** (accessible in the chat):
 
 | Valve | Default | Description |
 |---|---|---|
-| `verbose` | `None` | Override verbose mode |
-| `show_json` | `true` | Include JSON export in panel |
-| `dashboard_mode` | `None` | Override output mode |
+| `dashboard_mode` | `None` | Override admin output mode (`timeline` / `dashboard` / `both`) |
 
 ---
 
