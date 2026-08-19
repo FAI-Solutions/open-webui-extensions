@@ -128,7 +128,7 @@ Open a new chat window, click the ``Integrations`` icon next to the ``+``, and e
 
 Open WebUI v0.11.0 changed how filter-appended text is handled: content written into a message by a filter is now **persisted and sent back to the LLM** on subsequent turns. v0.7+ was rebuilt to deliver the stats differently, so the usage info is never visible to the LLM and leaves no residue in the chat when the filter is toggled off. v0.6 used the old append method, which only behaves correctly on pre-v0.11 Open WebUI.
 
-### Detailed changes in current v1.0
+### Changes in current v1.0
 
 - **Stats appear in a pretty HTML Dashboard** above the LLM response.
 - **Added weekly model stats**, can be viewed by expanding the account information.
