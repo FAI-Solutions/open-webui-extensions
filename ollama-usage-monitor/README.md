@@ -2,7 +2,7 @@
 
 **Part of the [FAI-Solutions Open WebUI Extensions hub](https://github.com/FAI-Solutions/open-webui-extensions)**
 
-Ollama Usage Monitor is an Open WebUI filter extension that shows session and weekly Ollama Cloud usage stats as a status line on each LLM response. Click the demo GIF below to see the Add-On in action:
+Ollama Usage Monitor is an Open WebUI filter extension that shows session and weekly Ollama Cloud usage stats at the top of each LLM response. Click the demo GIF below to see the Add-On in action:
 
 ![App demo](../assets/demo-ollama-usage-monitor.gif)
 
@@ -100,17 +100,7 @@ Open a new chat window, click the ``Integrations`` icon next to the ``+``, and e
 1. Start a new chat with any model
 2. Enable **Ollama Usage Monitor** by clicking the `Integrations` icon next to the `+` symbol and toggling ``Ollama Usage Monitor`` on
 3. Send your message to the LLM
-4. After the response, the usage stats appear as a status line. Example with multiple accounts — click the collapsed row to expand:
-
-   `☁ Ollama Usage Monitor`  →  expands to:
-   ```
-   ☁ MyAccount: Weekly 0% → Reset 4 days. • Session 0% → Reset 3 hours.
-   ☁ WifesAccount: Weekly 0.4% → Reset 4 days. • Session 0% → Reset 3 hours.
-   ```
-   With a single account configured, the line is shown directly (no expansion):
-   ```
-   ☁ MyAccount: Weekly 29.3% → Reset 1 day. • Session 2.4% → Reset 5 hours.
-   ```
+4. After the response, the usage stats appear at the top of the LLM response. Click to view the used model statistics for the current week.
 
 
 ## Settings Reference
@@ -122,23 +112,27 @@ Open a new chat window, click the ``Integrations`` icon next to the ``+``, and e
 | `enabled` | `true` | Enable or disable the filter globally |
 | `debug_mode` | `false` | Enable debug logging to console |
 
+**User Valves** (accessible in the chat):
+
+| Valve | Default | Description |
+|---|---|---|
+| `Visible Accounts` | `""` | Show only accounts, separated by commas (example: Account_Name1, Account_Name2). Use 'all' to show every account. |
+
 
 ## Version compatibility
 
 | Open WebUI version | Ollama Usage Monitor version |
 |--------------------|------------------------------|
-| **v0.11 or newer** | [v0.7](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor/ollama_usage_monitor.json) |
+| **v0.11 or newer** | [v1.0](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor/ollama_usage_monitor.json) |
 | v0.10 or older | [v0.6](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor/ollama_usage_monitor-v0.6.json) |
 
-Open WebUI v0.11.0 changed how filter-appended text is handled: content written into a message by a filter is now **persisted and sent back to the LLM** on subsequent turns. v0.7+ was rebuilt to deliver the stats as a **status line** instead of appended text, so the usage info is never visible to the LLM and leaves no residue in the chat when the filter is toggled off. v0.6 used the old append method, which only behaves correctly on pre-v0.11 Open WebUI.
+Open WebUI v0.11.0 changed how filter-appended text is handled: content written into a message by a filter is now **persisted and sent back to the LLM** on subsequent turns. v0.7+ was rebuilt to deliver the stats differently, so the usage info is never visible to the LLM and leaves no residue in the chat when the filter is toggled off. v0.6 used the old append method, which only behaves correctly on pre-v0.11 Open WebUI.
 
-### Detailed changes in v0.7
+### Detailed changes in current v1.0
 
-- **Stats now appear as a status line** above the response, not as appended text. With multiple accounts configured, a collapsed row `☁ Ollama Usage Monitor` expands to one row per account. With a single account, the stat line is shown directly.
-- **Invisible to the LLM.** The stats live in the message's status history, never in its content, so they are not sent back to the model on later turns.
-- **No residue when toggled.** Turning the filter off mid-chat stops new lines from appearing; nothing was ever written into the message text, so there is nothing left behind.
-- **Improved debug mode** (`debug_mode` valve)
-
+- **Stats appear in a pretty Dashboard** above the LLM response.
+- **Added weekly model stats**, can be viewed by expanding the account information.
+- **Added user valve** to whitelist accounts, by default all accounts configured by the admin are shown.
 
 ## Troubleshooting
 
@@ -173,7 +167,7 @@ Open WebUI v0.11.0 changed how filter-appended text is handled: content written 
 
 ### Cookie Expiration
 
-**Cause:** Ollama cookies have a limited lifespan and will eventually expire.
+**Cause:** Ollama cookies have a limited lifespan (~3 months) and will eventually expire.
 
 **Solution:** Extract the cookies again and update them accordingly.
 
