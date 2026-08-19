@@ -130,7 +130,7 @@ Open WebUI v0.11.0 changed how filter-appended text is handled: content written 
 
 ### Detailed changes in current v1.0
 
-- **Stats appear in a pretty Dashboard** above the LLM response.
+- **Stats appear in a pretty HTML Dashboard** above the LLM response.
 - **Added weekly model stats**, can be viewed by expanding the account information.
 - **Added user valve** to whitelist accounts, by default all accounts configured by the admin are shown.
 
