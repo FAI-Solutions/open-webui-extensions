@@ -10,7 +10,7 @@ LLMTrace is an Open WebUI filter extension that traces and displays everything t
 
 ## Output Modes
 
-The output is rendered as in-chat embeds **above** the LLM message and is not wrotten into the message text (basically the trace is invisible to the LLM).
+The output is rendered as in-chat embeds **above** the LLM message and is not written into the message text (basically the trace is invisible to the LLM).
 
 | Mode | What you get |
 |---|---|
@@ -22,16 +22,18 @@ The output is rendered as in-chat embeds **above** the LLM message and is not wr
 
 ### What It Shows
 
-- **Request**: model ID, base model, function calling mode, vision capability, feature flags, parameters
+- **Request**: model ID, base model, function calling mode, vision capability, feature flags, parameters, MCP tool servers
 - **System prompt**: detected length and preview
 - **Conversation**: message depth and role breakdown
 - **Attachments**: files and images in context
-- **Tool calls**: name, category (builtin/custom/terminal), round-trip count
-- **Reasoning**: tag-based or delta-based detection, block count, duration, character count
+- **Tool calls**: name, category (builtin / custom / terminal), round-trip count
+- **Reasoning**: tag-based or delta-based (`reasoning_content` / `reasoning` / `thinking`), one block per tool round, duration, character count
 - **Streaming**: chunk count (content vs empty), finish reason, round tracking
 - **Response quality**: characters, words, paragraphs, code blocks (with languages), headers, list items, tables, citations, math detection
+- **Tokens**: prompt / completion / total (when the provider sends usage)
 - **Timing**: TTFT (time to first token), TTFC (time to first content), stream duration, total duration
 - **RAG**: source detection and count
+
 
 <br>
 
@@ -81,6 +83,15 @@ The output is rendered as in-chat embeds **above** the LLM message and is not wr
 | Valve | Default | Description |
 |---|---|---|
 | `dashboard_mode` | `None` | Override admin output mode (`timeline` / `dashboard` / `both`) |
+
+### What is new in current v1.3
+
+- Improved tracking of LLM reasoning
+- Added Open WebUI v0.11 new "builtin tools" (files, memory, tasks, automations, calendar, sub-agents, notify)
+- Added token usage stats (if available)
+- Added MCP tool servers name tracking
+- Bug fixed, where background jobs emitted a trace
+- Bug fixed, where system prompt was not detected correctly since open WebUI v0.10+
 
 ---
 
