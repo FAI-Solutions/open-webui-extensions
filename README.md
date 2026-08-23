@@ -10,7 +10,7 @@
 
 | Extension | Type | Version | Marketplace | Description |
 | --- | --- | --- | --- | --- |
-| [LLMTrace](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace) | Filter | v1.2 | <a href="https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe" rel="me noopener">⬇️ Install</a> | Visualizes the LLM workflow step-by-step |
+| [LLMTrace](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace) | Filter | v1.3 | <a href="https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe" rel="me noopener">⬇️ Install</a> | Visualizes the LLM workflow step-by-step |
 | [Ollama Usage Monitor](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor) | Filter | v1.0 | <a href="https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3" rel="me noopener">⬇️ Install</a> | Shows weekly Ollama Cloud usage stats |
 
 
@@ -21,7 +21,7 @@
 Open WebUI is a great chat interface, but it still has a few rough edges and minor annoyances. This repository collects **small, focused, high-quality extensions** designed to improve everyday usability.
 
 **Planned extensions** (suggestions welcome!):
-- [ ] LLMTrace v1.3 (ability to trace all new features added in open webui v0.11)
+- [ ] ...
 - [ ] ...
 
 <br>
@@ -51,13 +51,6 @@ Account Name: Weekly 0% → Reset 3 days. • Session 0% → Reset 2 hours.
 ```
 
 ---
-
-## 🤝 Contributing
-
-Want to request an extension or add your own?  
-- Open an issue with your idea (or just email me)
-- Or submit a PR with a new folder following the same structure as the already existing extensions
-
 
 ## Contact
 
