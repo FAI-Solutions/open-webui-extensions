@@ -1,8 +1,8 @@
 # FAI-Solutions Open WebUI Extensions Hub
 
-**Practical filter, function, pipeline, and tool extensions for Open WebUI** — solving everyday usability and functionality gaps in local and cloud LLM workflows.
+**Practical filter, function, pipeline, and tool extensions for Open WebUI**, solving everyday usability and functionality gaps in local and cloud LLM workflows.
 
-⚠ **Early stage** — currently featuring two extension, with additional releases planned as interest grows.
+⚠ **Early stage**: currently featuring two extension, with additional releases planned as interest grows.
 
 ❗ **Open WebUI Marketplace** still has LLMTrace v1.2, for v1.3 use the json file hosted on github.
 
