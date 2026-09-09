@@ -16,16 +16,6 @@
 
 <br>
 
-## Why this hub exists
-
-Open WebUI is a great chat interface, but it still has a few rough edges and minor annoyances. This repository collects **small, focused, high-quality extensions** designed to improve everyday usability.
-
-**Planned extensions** (suggestions welcome!):
-- [ ] ...
-- [ ] ...
-
-<br>
-
 ## Extension Details
 
 ### <picture><img src="assets/llmtrace.svg" width="20" alt="LLMTrace icon"></picture> LLMTrace
