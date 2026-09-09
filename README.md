@@ -4,8 +4,6 @@
 
 ⚠ **Early stage**: currently featuring two extension, with additional releases planned as interest grows.
 
-❗ **Open WebUI Marketplace** still has LLMTrace v1.2, for v1.3 use the json file hosted on github.
-
 ---
 
 ## 📦  Available Extensions
