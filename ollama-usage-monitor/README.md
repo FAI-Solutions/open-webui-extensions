@@ -118,21 +118,17 @@ Open a new chat window, click the ``Integrations`` icon next to the ``+``, and e
 |---|---|---|
 | `Visible Accounts` | `""` | Show only accounts, separated by commas (example: Account_Name1, Account_Name2). Use 'all' to show every account. |
 
+### Changes in current v1.1
 
-## Version compatibility
+- Fixed compatibility with Ollama's new Settings & Usage Credits layout.
+- Improved session expiration detection, with alerts when cookies have expired and redirected to `/signin`.
 
-| Open WebUI version | Ollama Usage Monitor version |
-|--------------------|------------------------------|
-| **v0.11 or newer** | [v1.0](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor/ollama_usage_monitor.json) |
-| v0.10 or older | [v0.6](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor/ollama_usage_monitor-v0.6.json) |
-
-Open WebUI v0.11.0 changed how filter-appended text is handled: content written into a message by a filter is now **persisted and sent back to the LLM** on subsequent turns. v0.7+ was rebuilt to deliver the stats differently, so the usage info is never visible to the LLM and leaves no residue in the chat when the filter is toggled off. v0.6 used the old append method, which only behaves correctly on pre-v0.11 Open WebUI.
-
-### Changes in current v1.0
+### Changes in v1.0
 
 - **Stats appear in a pretty HTML Dashboard** above the LLM response.
 - **Added weekly model stats**, can be viewed by expanding the account information.
 - **Added user valve** to whitelist accounts, by default all accounts configured by the admin are shown.
+
 
 ## Troubleshooting
 
