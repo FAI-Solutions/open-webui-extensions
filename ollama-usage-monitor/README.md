@@ -120,10 +120,10 @@ Open a new chat window, click the ``Integrations`` icon next to the ``+``, and e
 
 ### Changes in current v1.1
 
-- Fixed compatibility with Ollama's new Settings & Usage Credits layout.
-- Improved session expiration detection, with alerts when cookies have expired and redirected to `/signin`.
+- **Fixed** compatibility with Ollama's new Settings & Usage Credits layout.
+- **Improved session expiration detection**, with alerts when cookies have expired and redirected to `/signin`.
 
-### Changes in v1.0
+### Changes in previous v1.0
 
 - **Stats appear in a pretty HTML Dashboard** above the LLM response.
 - **Added weekly model stats**, can be viewed by expanding the account information.
