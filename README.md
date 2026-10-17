@@ -11,7 +11,7 @@
 | Extension | Type | Version | Marketplace | Description |
 | --- | --- | --- | --- | --- |
 | [LLMTrace](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/llmtrace) | Filter | v1.3 | <a href="https://openwebui.com/posts/llmtrace_shows_the_llm_workflow_4dde62fe" rel="me noopener">⬇️ Install</a> | Visualizes the LLM workflow step-by-step |
-| [Ollama Usage Monitor](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor) | Filter | v1.0 | <a href="https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3" rel="me noopener">⬇️ Install</a> | Shows weekly Ollama Cloud usage stats |
+| [Ollama Usage Monitor](https://github.com/FAI-Solutions/open-webui-extensions/tree/main/ollama-usage-monitor) | Filter | v1.1 | <a href="https://openwebui.com/posts/4c6e3d6b-e65a-4c10-99a9-d9b4a75176c3" rel="me noopener">⬇️ Install</a> | Shows weekly Ollama Cloud usage stats |
 
 
 <br>
